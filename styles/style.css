@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+ }
+ .head {
+    background-color:#7D7C7C ;
+    width: 100%;
+    padding: 1px;
+    top:0;
+    position: sticky;
+ }
+ h1 {
+    text-align: center;
+    font-weight:bolder;
+    font-size: x-large;
+    color: #F1EFEF;
+  }
+ nav ul {
+    padding-inline: 2px;
+    display: flex;
+    gap: 3rem;
+    position: sticky;
+    top: 0;
+    justify-content: center;
+  }
+  nav li {
+    list-style-type: none;
+  }
+  nav a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #F0F0F0;
+  }
+  nav a:hover{
+    color: #CCC8AA;
+  }
+ body {
+    font-family:Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+  }
+  .home {
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bolder;
+    background-color: #F1EFEF;
+  }
+  .home img {
+    border-radius: 50%;
+    width: 250px;
+    height: 200px;
+  }
+  .aboutme {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 50px; 
+    display:grid;
+    grid-template-columns: 40% auto;
+  }
+  .contact {
+    padding: 10px;
+    background-color: #F0F0F0;
+    text-align: center;
+  }
+  .contact ul {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .contact li {
+    list-style-type: none;
+  }
+  .contact a{
+    font-size: 30px;
+    color: #7D7C7C;
+  }
+  footer {
+    padding: 20px;
+    background-color: #7D7C7C;
+    color: #F1EFEF;
+    text-align: center;
+    font-size: small;
+  }
+  @media screen and (max-width: 1200px) {
+    main{
+      flex-flow: column nowrap;
+    }
+  }
+  @media  screen and (max-width: 768px){
+    header {
+      flex-direction: column;
+    }
+    main {
+      flex-direction: column;
+    }
+    .Biodata{
+      align-self: stretch;
+    }  
+  }
